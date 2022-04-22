@@ -191,6 +191,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: FormHelper.inputFieldWidget(
+                    
                     context,
                     "${Icon(Icons.phone)}",
                     "Enter the Number",
@@ -206,6 +207,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     (onSavedVal) => {
                       phone = onSavedVal,
                     },
+                    isNumeric: true,
                     initialValue: "",
                     obscureText: false,
                     borderFocusColor: Color(0xFFE5E5E5),
